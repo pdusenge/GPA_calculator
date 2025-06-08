@@ -18,4 +18,4 @@ A simple JavaScript GPA calculator that allows users to:
 - `script.js` – All app logic
 - `README.md` – Project info
 
-## 🔗 [Live Demo] (optional)
+## 🔗 [Live Demo](https://pdusenge.github.io/GPA_calculator/)
