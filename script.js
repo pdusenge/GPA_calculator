@@ -8,7 +8,7 @@ let entries = JSON.parse(localStorage.getItem("entries")) || [];
 
 function updateGPA() {
   const total = entries.reduce((sum, item) => sum + item.grade, 0);
-  const gpa = entries.length ? total / entries.length.toFixed(2) : "0.00";
+  const gpa = entries.length ? (total / entries.length).toFixed(2) : "0.00";
   gpaDisplay.textContent = gpa;
 }
 
