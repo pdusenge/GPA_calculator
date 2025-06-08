@@ -1,0 +1,34 @@
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+  background-color: #F0F0F0;
+}
+
+.main , .marks{
+
+    width: 60%;
+    margin: auto;
+    padding:20px 2.5%;
+    max-width: 500px;
+    border: 1px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: white;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#form input, #form button {
+  margin: 10px auto;
+  border-radius: 5px;
+  border-width: 1px;
+  display: block;
+  width: 95%;
+  padding: 10px; 
+}
+
+
