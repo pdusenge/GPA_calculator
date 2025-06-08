@@ -8,7 +8,7 @@ let entries = JSON.parse(localStorage.getItem("entries")) || [];
 
 function updateGPA() {
   const total = entries.reduce((sum, item) => sum + item.grade, 0);
-  const gpa = entries.length ? (total*5 / (entries.length*100)).toFixed(2) : "0.00";
+  const gpa = entries.length ? (total / entries.length.toFixed(2) : "0.00";
   gpaDisplay.textContent = gpa;
 }
 
@@ -16,7 +16,7 @@ function renderList() {
   assignmentList.innerHTML = "";
   entries.forEach(entry => {
     const li = document.createElement("li");
-    li.textContent = `${entry.name}: ${entry.grade}/100`;
+    li.textContent = `${entry.name}: ${entry.grade}/5`;
     assignmentList.appendChild(li);
   });
 }
@@ -29,8 +29,8 @@ addButton.addEventListener("click", () => {
   const name = assignmentName.value.trim();
   const grade = parseFloat(assignmentGrade.value);
 
-  if (!name || isNaN(grade) || grade < 0 || grade > 100) {
-    alert("Enter valid name and grade (0–100).");
+  if (!name || isNaN(grade) || grade < 0 || grade > 5) {
+    alert("Enter valid name and grade (0–5).");
     return;
   }
 
